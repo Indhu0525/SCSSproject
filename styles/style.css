@@ -1,6 +1,22 @@
+@media (max-width: 600px) {
+  /* Styles for mobile */
+  .sidebar {
+    display: none;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Styles for tablets */
+  .sidebar {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  /* Styles for large screens */
+}
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .screen {
@@ -11,6 +27,7 @@ body {
   height: 100vh;
   width: 260px;
   position: relative;
+  padding-top: 10px;
 }
 .sidebar::before {
   content: "";
@@ -28,6 +45,7 @@ body {
   padding: 15px 15px;
   position: relative;
   z-index: 2;
+  margin-left: 10px;
 }
 .sidebar .sidebar_header img {
   width: 35px;
@@ -36,6 +54,8 @@ body {
   padding-left: 8px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
   color: white;
 }
 .sidebar .hr_line {
@@ -54,8 +74,6 @@ body {
   margin: 10px 15px 0;
   cursor: pointer;
   border-radius: 3px;
-  color: white;
-  background-color: transparent;
   z-index: 2;
   position: relative;
 }
@@ -67,12 +85,12 @@ body {
   width: 24px;
 }
 .sidebar .sidebar_content .button1 .custom-button h4, .sidebar .sidebar_content .button1 .sidebar_footer h4, .sidebar .sidebar_content .sidebar_footer .custom-button h4, .sidebar .sidebar_content .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_footer .button1 .custom-button h4, .sidebar .sidebar_footer .button1 .sidebar_footer h4, .sidebar .sidebar_footer .sidebar_footer .custom-button h4, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_content .button2 .custom-button h4, .sidebar .sidebar_content .button2 .sidebar_footer h4, .sidebar .sidebar_footer .button2 .custom-button h4, .sidebar .sidebar_footer .button2 .sidebar_footer h4, .sidebar .sidebar_content .button3 .custom-button h4, .sidebar .sidebar_content .button3 .sidebar_footer h4, .sidebar .sidebar_footer .button3 .custom-button h4, .sidebar .sidebar_footer .button3 .sidebar_footer h4, .sidebar .sidebar_content .button4 .custom-button h4, .sidebar .sidebar_content .button4 .sidebar_footer h4, .sidebar .sidebar_footer .button4 .custom-button h4, .sidebar .sidebar_footer .button4 .sidebar_footer h4, .sidebar .sidebar_content .button5 .custom-button h4, .sidebar .sidebar_content .button5 .sidebar_footer h4, .sidebar .sidebar_footer .button5 .custom-button h4, .sidebar .sidebar_footer .button5 .sidebar_footer h4, .sidebar .sidebar_content .button6 .custom-button h4, .sidebar .sidebar_content .button6 .sidebar_footer h4, .sidebar .sidebar_footer .button6 .custom-button h4, .sidebar .sidebar_footer .button6 .sidebar_footer h4, .sidebar .sidebar_content .button7 .custom-button h4, .sidebar .sidebar_content .button7 .sidebar_footer h4, .sidebar .sidebar_footer .button7 .custom-button h4, .sidebar .sidebar_footer .button7 .sidebar_footer h4, .sidebar .sidebar_content .button8 .custom-button h4, .sidebar .sidebar_content .button8 .sidebar_footer h4, .sidebar .sidebar_footer .button8 .custom-button h4, .sidebar .sidebar_footer .button8 .sidebar_footer h4 {
-  padding-left: 15px;
-  color: white;
   font-size: 14px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 30px;
+  color: #e5e7eb;
+  padding-left: 15px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .sidebar .sidebar_content .button1.button1 .custom-button, .sidebar .sidebar_content .button1.button1 .sidebar_footer, .sidebar .sidebar_content .sidebar_footer .custom-button, .sidebar .sidebar_content .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button1.button1 .custom-button, .sidebar .sidebar_footer .button1.button1 .sidebar_footer, .sidebar .sidebar_footer .sidebar_footer .custom-button, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button2.button1 .custom-button, .sidebar .sidebar_content .button3.button1 .custom-button, .sidebar .sidebar_content .button4.button1 .custom-button, .sidebar .sidebar_content .button5.button1 .custom-button, .sidebar .sidebar_content .button6.button1 .custom-button, .sidebar .sidebar_content .button7.button1 .custom-button, .sidebar .sidebar_content .button8.button1 .custom-button {
   background-color: #00acc1;
@@ -82,4 +100,54 @@ body {
   width: 100%;
   position: absolute;
   margin-top: 0;
+}
+
+.main_content {
+  width: calc(100% - 260px);
+}
+.main_content .main-header {
+  padding: 10px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_content .main-header .lefthead {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #a6a8aa;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.main_content .main-header .righthead {
+  display: flex;
+  align-items: center;
+}
+.main_content .main-header .righthead .search-box {
+  width: 200px;
+  border-bottom: 1px solid #ccc;
+}
+.main_content .main-header .righthead .search-box input {
+  width: 100%;
+  outline: none;
+  background: transparent;
+}
+.main_content .main-header .righthead .search-box input:focus {
+  border-bottom: 1px solid #9c27b0;
+}
+.main_content .main-header .righthead .svg--class {
+  background-color: white;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_content .main-header .righthead .svg--class .svgbg {
+  color: white;
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=style.css.map */

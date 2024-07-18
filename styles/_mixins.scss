@@ -1,0 +1,13 @@
+@mixin h4set($size: 18px,$fw:300,$lineh:30px,$txtcolor:gray) {
+   font-size: $size;
+   font-weight:$fw;
+   line-height: $lineh;
+   color:$txtcolor;
+  }
+@mixin svgicon( $svgfill:white,$svgwidth:24px,$svgheight:18px){
+    color:$svgfill;
+    width:$svgwidth;
+    height:$svgheight;
+ 
+}
+   

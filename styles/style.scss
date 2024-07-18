@@ -1,22 +1,23 @@
 @import 'fonts';
 @import "colors";
-
+@import "mediaqueries";
+@import "mixins";
 body {
   margin: 0;
   padding: 0;
+  background-color: $bodybg;
 }
-
 .screen {
   display: flex;
 }
-
+//sidebar//
 .sidebar {
     height: 100vh;
     width: 260px;
   // width: calc(100% - 82%);
   position: relative;
-  
-  &::before {
+  padding-top: 10px;
+  &::before {//sidebar image background//
     content: '';
     position: absolute;
     top: 0;
@@ -26,38 +27,35 @@ body {
     background: url("../images/sidebarbg.png") no-repeat center center/cover;
     filter: brightness(20%);
     z-index: 1;
-  }
-  
+  }//sidebar header//
   .sidebar_header {
     display: flex;
     padding: 15px 15px;
     position: relative;
     z-index: 2;
-
-    img {
+    margin-left: 10px;
+    img {//header image//
       width: 35px;
     }
-
-    h4 {
+    h4 {//header h4//
       padding-left: 8px;
       font-family: $font-fam;
-      font-size: 18px;
-      color: $mywhite;
+      @include h4set($size:18px,$txtcolor:white);
     }
   }
-
+//horizontal line//
   .hr_line {
     margin-left: 15px;
     margin-right: 15px;
     position: relative;
     z-index: 2;
-    border: 1px solid rgba(180, 180, 180, 0.3);
+    border: 1px solid $hrcolor;
   }
-
+//sidebar content//
   .sidebar_content {
     margin-top: 20px;
    
-
+//content buttons//
     .button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8 {
       .custom-button {
         display: flex;
@@ -65,39 +63,31 @@ body {
         margin: 10px 15px 0;
         cursor: pointer;
         border-radius: 3px;
-       
-        color: $mywhite;
-        background-color: transparent;
         z-index: 2;
         position: relative;
-
         &:hover {
-          background-color: #00acc1;
-         
+          background-color: $buttonbg;
         }
-
         .svg_class {
           fill: white;
           width: 24px;
         }
-
         h4 {
+          @include h4set($size:14px,$fw:100,$lineh:30px,$txtcolor:$buttonh4);
           padding-left: 15px;
-          color: $mywhite;
-          font-size: 14px;
           font-family: $font-fam;
-          font-weight: 300;
-          line-height: 30px;
+        
         }
       }
       &.button1 {
         .custom-button {
-          background-color: #00acc1;
+          background-color: $buttonbg;
         }
       }
   
     }
   }
+  //sidebar footer//
   .sidebar_footer{
     bottom: 13px;
     width: 100%;
@@ -105,7 +95,52 @@ body {
     @extend .sidebar_content, .button1, .custom-button, .svg_class;
     margin-top: 0;
     }
-    
   }
-
-
+//main content//
+.main_content{
+  width: calc(100% - 260px);
+  .main-header{
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .lefthead{
+      padding: 12px 30px;
+      @include h4set($size:18px,$fw:300,$lineh:30px,$txtcolor:#a6a8aa);
+      font-family: $font-fam;
+    }
+    .righthead{
+      display: flex;
+      align-items: center;
+      .search-box {
+        width: 200px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      .search-box input {
+        width: 100%;
+        outline: none;
+        background: transparent;
+      }
+      
+      .search-box input:focus {
+        border-bottom: 1px solid $searchbar;
+      }
+      .svg--class {
+        background-color: white;
+        border-radius: 30px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        .svgbg{
+          @include svgicon($svgwidth:18px,$svgheight:18px);
+        }
+       
+      }
+    }
+  }
+}
