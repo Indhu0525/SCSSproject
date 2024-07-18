@@ -1,2 +1,85 @@
-h1 {
-  color: red; }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 260px;
+  position: relative;
+}
+.sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/sidebarbg.png") no-repeat center center/cover;
+  filter: brightness(20%);
+  z-index: 1;
+}
+.sidebar .sidebar_header {
+  display: flex;
+  padding: 15px 15px;
+  position: relative;
+  z-index: 2;
+}
+.sidebar .sidebar_header img {
+  width: 35px;
+}
+.sidebar .sidebar_header h4 {
+  padding-left: 8px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.sidebar .hr_line {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(180, 180, 180, 0.3);
+}
+.sidebar .sidebar_content, .sidebar .sidebar_footer {
+  margin-top: 20px;
+}
+.sidebar .sidebar_content .button1 .custom-button, .sidebar .sidebar_content .button1 .sidebar_footer, .sidebar .sidebar_content .sidebar_footer .custom-button, .sidebar .sidebar_content .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button1 .custom-button, .sidebar .sidebar_footer .button1 .sidebar_footer, .sidebar .sidebar_footer .sidebar_footer .custom-button, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button2 .custom-button, .sidebar .sidebar_content .button2 .sidebar_footer, .sidebar .sidebar_footer .button2 .custom-button, .sidebar .sidebar_footer .button2 .sidebar_footer, .sidebar .sidebar_content .button3 .custom-button, .sidebar .sidebar_content .button3 .sidebar_footer, .sidebar .sidebar_footer .button3 .custom-button, .sidebar .sidebar_footer .button3 .sidebar_footer, .sidebar .sidebar_content .button4 .custom-button, .sidebar .sidebar_content .button4 .sidebar_footer, .sidebar .sidebar_footer .button4 .custom-button, .sidebar .sidebar_footer .button4 .sidebar_footer, .sidebar .sidebar_content .button5 .custom-button, .sidebar .sidebar_content .button5 .sidebar_footer, .sidebar .sidebar_footer .button5 .custom-button, .sidebar .sidebar_footer .button5 .sidebar_footer, .sidebar .sidebar_content .button6 .custom-button, .sidebar .sidebar_content .button6 .sidebar_footer, .sidebar .sidebar_footer .button6 .custom-button, .sidebar .sidebar_footer .button6 .sidebar_footer, .sidebar .sidebar_content .button7 .custom-button, .sidebar .sidebar_content .button7 .sidebar_footer, .sidebar .sidebar_footer .button7 .custom-button, .sidebar .sidebar_footer .button7 .sidebar_footer, .sidebar .sidebar_content .button8 .custom-button, .sidebar .sidebar_content .button8 .sidebar_footer, .sidebar .sidebar_footer .button8 .custom-button, .sidebar .sidebar_footer .button8 .sidebar_footer {
+  display: flex;
+  padding: 10px 15px;
+  margin: 10px 15px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+  z-index: 2;
+  position: relative;
+}
+.sidebar .sidebar_content .button1 .custom-button:hover, .sidebar .sidebar_content .button1 .sidebar_footer:hover, .sidebar .sidebar_content .sidebar_footer .custom-button:hover, .sidebar .sidebar_content .sidebar_footer .sidebar_footer:hover, .sidebar .sidebar_footer .button1 .custom-button:hover, .sidebar .sidebar_footer .button1 .sidebar_footer:hover, .sidebar .sidebar_footer .sidebar_footer .custom-button:hover, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer:hover, .sidebar .sidebar_content .button2 .custom-button:hover, .sidebar .sidebar_content .button2 .sidebar_footer:hover, .sidebar .sidebar_footer .button2 .custom-button:hover, .sidebar .sidebar_footer .button2 .sidebar_footer:hover, .sidebar .sidebar_content .button3 .custom-button:hover, .sidebar .sidebar_content .button3 .sidebar_footer:hover, .sidebar .sidebar_footer .button3 .custom-button:hover, .sidebar .sidebar_footer .button3 .sidebar_footer:hover, .sidebar .sidebar_content .button4 .custom-button:hover, .sidebar .sidebar_content .button4 .sidebar_footer:hover, .sidebar .sidebar_footer .button4 .custom-button:hover, .sidebar .sidebar_footer .button4 .sidebar_footer:hover, .sidebar .sidebar_content .button5 .custom-button:hover, .sidebar .sidebar_content .button5 .sidebar_footer:hover, .sidebar .sidebar_footer .button5 .custom-button:hover, .sidebar .sidebar_footer .button5 .sidebar_footer:hover, .sidebar .sidebar_content .button6 .custom-button:hover, .sidebar .sidebar_content .button6 .sidebar_footer:hover, .sidebar .sidebar_footer .button6 .custom-button:hover, .sidebar .sidebar_footer .button6 .sidebar_footer:hover, .sidebar .sidebar_content .button7 .custom-button:hover, .sidebar .sidebar_content .button7 .sidebar_footer:hover, .sidebar .sidebar_footer .button7 .custom-button:hover, .sidebar .sidebar_footer .button7 .sidebar_footer:hover, .sidebar .sidebar_content .button8 .custom-button:hover, .sidebar .sidebar_content .button8 .sidebar_footer:hover, .sidebar .sidebar_footer .button8 .custom-button:hover, .sidebar .sidebar_footer .button8 .sidebar_footer:hover {
+  background-color: #00acc1;
+}
+.sidebar .sidebar_content .button1 .custom-button .svg_class, .sidebar .sidebar_content .button1 .custom-button .sidebar_footer, .sidebar .sidebar_content .button1 .sidebar_footer .svg_class, .sidebar .sidebar_content .button1 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .sidebar_footer .custom-button .svg_class, .sidebar .sidebar_content .sidebar_footer .custom-button .sidebar_footer, .sidebar .sidebar_content .sidebar_footer .sidebar_footer .svg_class, .sidebar .sidebar_content .sidebar_footer .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button1 .custom-button .svg_class, .sidebar .sidebar_footer .button1 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button1 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button1 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .sidebar_footer .custom-button .svg_class, .sidebar .sidebar_footer .sidebar_footer .custom-button .sidebar_footer, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer .svg_class, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button2 .custom-button .svg_class, .sidebar .sidebar_content .button2 .custom-button .sidebar_footer, .sidebar .sidebar_content .button2 .sidebar_footer .svg_class, .sidebar .sidebar_content .button2 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button2 .custom-button .svg_class, .sidebar .sidebar_footer .button2 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button2 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button2 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button3 .custom-button .svg_class, .sidebar .sidebar_content .button3 .custom-button .sidebar_footer, .sidebar .sidebar_content .button3 .sidebar_footer .svg_class, .sidebar .sidebar_content .button3 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button3 .custom-button .svg_class, .sidebar .sidebar_footer .button3 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button3 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button3 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button4 .custom-button .svg_class, .sidebar .sidebar_content .button4 .custom-button .sidebar_footer, .sidebar .sidebar_content .button4 .sidebar_footer .svg_class, .sidebar .sidebar_content .button4 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button4 .custom-button .svg_class, .sidebar .sidebar_footer .button4 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button4 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button4 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button5 .custom-button .svg_class, .sidebar .sidebar_content .button5 .custom-button .sidebar_footer, .sidebar .sidebar_content .button5 .sidebar_footer .svg_class, .sidebar .sidebar_content .button5 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button5 .custom-button .svg_class, .sidebar .sidebar_footer .button5 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button5 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button5 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button6 .custom-button .svg_class, .sidebar .sidebar_content .button6 .custom-button .sidebar_footer, .sidebar .sidebar_content .button6 .sidebar_footer .svg_class, .sidebar .sidebar_content .button6 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button6 .custom-button .svg_class, .sidebar .sidebar_footer .button6 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button6 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button6 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button7 .custom-button .svg_class, .sidebar .sidebar_content .button7 .custom-button .sidebar_footer, .sidebar .sidebar_content .button7 .sidebar_footer .svg_class, .sidebar .sidebar_content .button7 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button7 .custom-button .svg_class, .sidebar .sidebar_footer .button7 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button7 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button7 .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button8 .custom-button .svg_class, .sidebar .sidebar_content .button8 .custom-button .sidebar_footer, .sidebar .sidebar_content .button8 .sidebar_footer .svg_class, .sidebar .sidebar_content .button8 .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button8 .custom-button .svg_class, .sidebar .sidebar_footer .button8 .custom-button .sidebar_footer, .sidebar .sidebar_footer .button8 .sidebar_footer .svg_class, .sidebar .sidebar_footer .button8 .sidebar_footer .sidebar_footer {
+  fill: white;
+  width: 24px;
+}
+.sidebar .sidebar_content .button1 .custom-button h4, .sidebar .sidebar_content .button1 .sidebar_footer h4, .sidebar .sidebar_content .sidebar_footer .custom-button h4, .sidebar .sidebar_content .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_footer .button1 .custom-button h4, .sidebar .sidebar_footer .button1 .sidebar_footer h4, .sidebar .sidebar_footer .sidebar_footer .custom-button h4, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_content .button2 .custom-button h4, .sidebar .sidebar_content .button2 .sidebar_footer h4, .sidebar .sidebar_footer .button2 .custom-button h4, .sidebar .sidebar_footer .button2 .sidebar_footer h4, .sidebar .sidebar_content .button3 .custom-button h4, .sidebar .sidebar_content .button3 .sidebar_footer h4, .sidebar .sidebar_footer .button3 .custom-button h4, .sidebar .sidebar_footer .button3 .sidebar_footer h4, .sidebar .sidebar_content .button4 .custom-button h4, .sidebar .sidebar_content .button4 .sidebar_footer h4, .sidebar .sidebar_footer .button4 .custom-button h4, .sidebar .sidebar_footer .button4 .sidebar_footer h4, .sidebar .sidebar_content .button5 .custom-button h4, .sidebar .sidebar_content .button5 .sidebar_footer h4, .sidebar .sidebar_footer .button5 .custom-button h4, .sidebar .sidebar_footer .button5 .sidebar_footer h4, .sidebar .sidebar_content .button6 .custom-button h4, .sidebar .sidebar_content .button6 .sidebar_footer h4, .sidebar .sidebar_footer .button6 .custom-button h4, .sidebar .sidebar_footer .button6 .sidebar_footer h4, .sidebar .sidebar_content .button7 .custom-button h4, .sidebar .sidebar_content .button7 .sidebar_footer h4, .sidebar .sidebar_footer .button7 .custom-button h4, .sidebar .sidebar_footer .button7 .sidebar_footer h4, .sidebar .sidebar_content .button8 .custom-button h4, .sidebar .sidebar_content .button8 .sidebar_footer h4, .sidebar .sidebar_footer .button8 .custom-button h4, .sidebar .sidebar_footer .button8 .sidebar_footer h4 {
+  padding-left: 15px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+}
+.sidebar .sidebar_content .button1.button1 .custom-button, .sidebar .sidebar_content .button1.button1 .sidebar_footer, .sidebar .sidebar_content .sidebar_footer .custom-button, .sidebar .sidebar_content .sidebar_footer .sidebar_footer, .sidebar .sidebar_footer .button1.button1 .custom-button, .sidebar .sidebar_footer .button1.button1 .sidebar_footer, .sidebar .sidebar_footer .sidebar_footer .custom-button, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer, .sidebar .sidebar_content .button2.button1 .custom-button, .sidebar .sidebar_content .button3.button1 .custom-button, .sidebar .sidebar_content .button4.button1 .custom-button, .sidebar .sidebar_content .button5.button1 .custom-button, .sidebar .sidebar_content .button6.button1 .custom-button, .sidebar .sidebar_content .button7.button1 .custom-button, .sidebar .sidebar_content .button8.button1 .custom-button {
+  background-color: #00acc1;
+}
+.sidebar .sidebar_footer {
+  bottom: 13px;
+  width: 100%;
+  position: absolute;
+  margin-top: 0;
+}/*# sourceMappingURL=style.css.map */
