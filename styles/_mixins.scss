@@ -8,6 +8,16 @@
     color:$svgfill;
     width:$svgwidth;
     height:$svgheight;
- 
 }
-   
+@mixin w-h($widthh:30px,$heightt:30px){
+  width: $widthh;
+  height: $heightt;
+}
+@mixin mt-mb($mt:30px,$mb:30px){
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
+@mixin mt-ml($mt:20px,$ml:20px){
+  margin-top: $mt;
+  margin-left: $ml;
+}

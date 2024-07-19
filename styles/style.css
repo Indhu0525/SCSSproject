@@ -137,17 +137,82 @@ body {
 .main_content .main-header .righthead .search-box input:focus {
   border-bottom: 1px solid #9c27b0;
 }
-.main_content .main-header .righthead .svg--class {
+.main_content .main-header .righthead .svg--class, .main_content .main-header .righthead .svg-dashboard, .main_content .main-header .righthead .svg-notifications {
   background-color: white;
   border-radius: 30px;
-  width: 30px;
-  height: 30px;
+  width: 41px;
+  height: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main_content .main-header .righthead .svg--class .svgbg {
+.main_content .main-header .righthead .svg--class .svgbg, .main_content .main-header .righthead .svg-dashboard .svgbg, .main_content .main-header .righthead .svg-notifications .svgbg {
   color: white;
   width: 18px;
   height: 18px;
+}
+.main_content .main-header .righthead .svg-dashboard, .main_content .main-header .righthead .svg-notifications {
+  background-color: unset;
+}
+.main_content .main-header .righthead .svg-notifications {
+  position: relative;
+}
+.main_content .main-header .righthead .svg-notifications .svgbg span {
+  background-color: red;
+  border-radius: 10px;
+  font-size: 9px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  text-align: center;
+  top: 2px;
+  right: 6px;
+}
+.main_content .main-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main_content .main-content .row {
+  display: flex;
+  gap: 15px;
+}
+.main_content .main-content .row .col {
+  width: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main_content .main-content .row .col .used-space {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main_content .main-content .row .col .used-space .icon {
+  padding: 15px;
+  margin-top: -20px;
+  margin-left: 15px;
+  width: 56px;
+  height: 56px;
+  float: left;
+  background-color: #ff9800;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_content .main-content .row .col .used-space .text {
+  text-align: right;
+  margin: 0 15px;
+}
+.main_content .main-content .row .col .used-space .text p {
+  font-size: 16px;
+  color: #999;
+  padding-top: 10px;
+}
+.main_content .main-content .row .col .used-space .text h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #3C4858;
+}
+.main_content .main-content .row .col .used-space .text h3 span {
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
