@@ -3,14 +3,53 @@
   .sidebar {
    display: none;
   }
+  .main_content{
+
+// width: auto;
+.main-header{
+  .righthead{
+    display: none;
+  }
 }
-@media (min-width: 601px) and (max-width: 768px) {
+.row{
+  display: block;
+  .col{
+    width:100%;
+  }
+}
+
+  }
+}
+@media (min-width: 601px) and (max-width: 769px) {
   /* Styles for tablets */
   .sidebar {
     display: none;
    }
+   .main_content{   .main-header{
+    .righthead{
+      display: none;
+    }
+  }}
+
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   /* Styles for large screens */
+  .main_content{  
+    .row{
+      display: flex;
+      .col{
+        width:25%;
+      }
+    }
+    .row2{
+      .row{
+        display: flex;
+        justify-content: space-between;
+        .col{
+          width: 50%;
+        }
+      }
+    }
+  }
 
 }
