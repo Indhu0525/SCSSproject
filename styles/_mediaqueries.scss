@@ -34,7 +34,11 @@
 }
 @media (min-width: 1024px) {
   /* Styles for large screens */
+  .sidebar{
+    position: fixed;
+  }
   .main_content{  
+    margin-left: 260px;
     .row{
       display: flex;
       .col{
