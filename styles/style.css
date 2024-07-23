@@ -101,7 +101,7 @@ body {
 .main_content .main-header .lefthead {
   padding: 12px 30px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 30px;
   color: #a6a8aa;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -113,6 +113,7 @@ body {
 .main_content .main-header .righthead .search-box {
   width: 200px;
   border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
 }
 .main_content .main-header .righthead .search-box input {
   width: 100%;
@@ -179,7 +180,8 @@ body {
   width: 84px;
   height: 84px;
   float: left;
-  background-color: #ff9800;
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -187,12 +189,15 @@ body {
 }
 .main_content .main-content .row1 .row .col .used-space .icon2, .main_content .main-content .row2 .row .col .used-space .icon2, .main_content .main-content .row3 .row .col .used-space .icon2 {
   background: linear-gradient(60deg, #66bb6a, #43a047);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
 }
 .main_content .main-content .row1 .row .col .used-space .icon3, .main_content .main-content .row2 .row .col .used-space .icon3, .main_content .main-content .row3 .row .col .used-space .icon3 {
   background: linear-gradient(60deg, #ef5350, #e53935);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
 }
 .main_content .main-content .row1 .row .col .used-space .icon4, .main_content .main-content .row2 .row .col .used-space .icon4, .main_content .main-content .row3 .row .col .used-space .icon4 {
   background: linear-gradient(60deg, #26c6da, #00acc1);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 172, 193, 0.4);
 }
 .main_content .main-content .row1 .row .col .used-space .text, .main_content .main-content .row2 .row .col .used-space .text, .main_content .main-content .row3 .row .col .used-space .text {
   text-align: right;
@@ -200,17 +205,22 @@ body {
   margin-bottom: 20px;
 }
 .main_content .main-content .row1 .row .col .used-space .text p, .main_content .main-content .row2 .row .col .used-space .text p, .main_content .main-content .row3 .row .col .used-space .text p {
-  font-size: 16px;
+  font-size: 14px;
   color: #999;
   padding-top: 10px;
 }
 .main_content .main-content .row1 .row .col .used-space .text h3, .main_content .main-content .row2 .row .col .used-space .text h3, .main_content .main-content .row3 .row .col .used-space .text h3 {
   margin: 0;
-  font-size: 24px;
-  color: #919499;
+  font-size: 1.825em;
+  font-weight: 300;
+  color: #3C4858;
 }
 .main_content .main-content .row1 .row .col .used-space .text h3 span, .main_content .main-content .row2 .row .col .used-space .text h3 span, .main_content .main-content .row3 .row .col .used-space .text h3 span {
   font-size: 15px;
+}
+.main_content .main-content .row1 .row .col .used-space hr, .main_content .main-content .row2 .row .col .used-space hr, .main_content .main-content .row3 .row .col .used-space hr {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .main_content .main-content .row1 .row .col .used-space .col-footer, .main_content .main-content .row2 .row .col .used-space .col-footer, .main_content .main-content .row3 .row .col .used-space .col-footer {
   margin-top: 20px;
@@ -223,7 +233,6 @@ body {
   padding-bottom: 10px;
   border-radius: 0;
   justify-content: space-between;
-  background-color: transparent;
 }
 .main_content .main-content .row1 .row .col .used-space .col-footer .footer, .main_content .main-content .row2 .row .col .used-space .col-footer .footer, .main_content .main-content .row3 .row .col .used-space .col-footer .footer {
   color: #999;
@@ -239,8 +248,14 @@ body {
   margin-left: 3px;
   margin-right: 3px;
 }
+.main_content .main-content .row1 .row .col .used-space .col-footer .footer .svg-class svg, .main_content .main-content .row2 .row .col .used-space .col-footer .footer .svg-class svg, .main_content .main-content .row3 .row .col .used-space .col-footer .footer .svg-class svg {
+  color: #bababa;
+}
+.main_content .main-content .row1 .row .col .used-space .col-footer .footer .get, .main_content .main-content .row2 .row .col .used-space .col-footer .footer .get, .main_content .main-content .row3 .row .col .used-space .col-footer .footer .get {
+  color: #9c27b0;
+}
 .main_content .main-content .row1 .row .col .used-space .col-footer .footer p, .main_content .main-content .row2 .row .col .used-space .col-footer .footer p, .main_content .main-content .row3 .row .col .used-space .col-footer .footer p {
-  color: gray;
+  color: #bababa;
 }
 .main_content .main-content .row2 .graphbg, .main_content .main-content .row3 .graphbg {
   padding: 20px;
@@ -248,6 +263,7 @@ body {
 .main_content .main-content .row2 .graphbg img, .main_content .main-content .row3 .graphbg img {
   margin-top: -40px;
   width: 100%;
+  border-radius: 4px;
 }
 .main_content .main-content .row2 .graphtext, .main_content .main-content .row3 .graphtext {
   color: gray;
@@ -267,32 +283,125 @@ body {
 .main_content .main-content .row2 .graphtext p span, .main_content .main-content .row3 .graphtext p span {
   color: #366d39;
 }
-.main_content .main-content .row3 .task {
+.main_content .main-content .row3 .col .task {
   display: flex;
-  justify-content: space-between;
   background: linear-gradient(60deg, #ab47bc, #8e24aa);
-  padding: 15px;
   margin-top: -20px;
   border-radius: 3px;
   color: white;
+  float: left;
+  padding: 10px 10px 10px 0px;
+  width: 90%;
+  margin-left: 24px;
 }
-.main_content .main-content .row3 .task .taskbuttons {
-  display: contents;
+.main_content .main-content .row3 .col .task button {
+  padding: 15px;
 }
-.main_content .main-content .row3 .task .taskbuttons button {
-  padding: 10px;
+.main_content .main-content .row3 .col .task .taskbuttons {
+  display: flex;
+  overflow-y: auto;
+}
+.main_content .main-content .row3 .col .task .taskbuttons button {
+  border-radius: 3px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.main_content .main-content .row3 .task .taskbuttons button:hover {
-  background-color: rgba(224, 165, 232, 0.8); /* Adjust opacity */
+.main_content .main-content .row3 .col .task .taskbuttons .button1, .main_content .main-content .row3 .col .task .taskbuttons .sidebar .sidebar_footer, .sidebar .main_content .main-content .row3 .col .task .taskbuttons .sidebar_footer {
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .graphtext .input1 {
+.main_content .main-content .row3 .col .task .taskbuttons .button1:hover, .main_content .main-content .row3 .col .task .taskbuttons .sidebar .sidebar_footer:hover, .sidebar .main_content .main-content .row3 .col .task .taskbuttons .sidebar_footer:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main_content .main-content .row3 .col .task .taskbuttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main_content .main-content .row3 .col .graphtext .input1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+}
+.main_content .main-content .row3 .col {
+  background: #FFF;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.main_content .main-content .row3 .col .employeestats .top {
+  padding: 15px;
+  margin-top: -20px;
+  border-radius: 3px;
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+  color: #fff;
+  margin-bottom: 3px;
+}
+.main_content .main-content .row3 .col .employeestats .top p {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+}
+.main_content .main-content .row3 .col .employeestats .bottom {
+  padding: 20px;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext {
+  margin-top: 24px;
+  overflow-x: auto;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table {
+  width: 100%;
+  max-width: 100%;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody {
+  color: #ff9800;
+  text-align: start;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow {
+  border-bottom: 1px solid #ddd;
+  height: 56px;
+  display: table-row;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablebody, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
+  padding: 12px 8px;
+  font-size: 1em;
+  font-weight: 300;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow {
+  border-bottom: 1px solid #ddd;
+}
+.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
+  text-align: start;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+}
+.main_content .footerdown {
+  padding: 15px 0;
+}
+.main_content .footerdown .footersection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.main_content .footerdown .footersection .footerleft {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.main_content .footerdown .footersection .footerleft h5 {
+  margin: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px;
+}
+.main_content .footerdown .footersection .footerright p {
+  color: #3c4858;
+  font-size: 14px;
+  margin: 5px;
+}
+.main_content .footerdown .footersection .footerright p span {
+  color: #9c27b0;
 }
 
 @media (max-width: 600px) {
@@ -309,6 +418,16 @@ body {
   .main_content .row .col {
     width: 100%;
   }
+  .main_content .footersection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_content .footerleft {
+    justify-content: unset;
+  }
+  .main_content .footerright p {
+    text-align: unset;
+  }
 }
 @media (min-width: 601px) and (max-width: 769px) {
   /* Styles for tablets */
@@ -323,6 +442,7 @@ body {
   /* Styles for large screens */
   .sidebar {
     position: fixed;
+    height: 100%;
   }
   .main_content {
     margin-left: 260px;

@@ -9,6 +9,13 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      
+        @media (max-width: 600px) {
+           
+  
+} 
+    </style>
 </head>
 <body>
    <div class="screen">
@@ -171,7 +178,7 @@
 <div class="righthead">
          <!--search-box-->
          <div class="search-box">
-            <input type="text" placeholder="Search...">
+            <input type="text" placeholder="Search">
            
           </div>
           <!--search-icon-->
@@ -234,7 +241,7 @@
                               <div class="svg-class">
                                   <svg focusable="false" viewBox="0 0 24 24" width="16" height="16"  fill="red" aria-hidden="true"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></svg>
                               </div>
-                              <p>Get more space</p>
+                              <p class="get">Get more space</p>
                           </div>
                       </div>
                   </div>
@@ -412,31 +419,27 @@
          <div class="col">
             <div class="used-space">
                 <div class="inner">
-                  
                      <div class="task">
-                        <!-- <img src="./images/graph1.png"> -->
                      <button>Tasks:</button>
                     <div class="taskbuttons">
-                     <button>
-                        <svg class="MuiSvgIcon-root" focusable="false" width="20" height="20" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+                     <button class="button1">
+                        <svg class="MuiSvgIcon-root" focusable="false" width="26" height="26" fill="white" viewBox="0 0 24 24" aria-hidden="true">
                            <path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z">
 
                         </path></svg>
-                        bugs</button>
+                       BUGS</button>
                      <button>
-                        <svg class="MuiSvgIcon-root" focusable="false" width="20" height="20" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="MuiSvgIcon-root" focusable="false" width="26" height="26" fill="white" viewBox="0 0 24 24" aria-hidden="true">
                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></svg>
-                        Website</button>
+                        WEBSITE</button>
                      <button>
-                        <svg class="MuiSvgIcon-root" focusable="false" width="20" height="20" fill="white" viewBox="0 0 24 24" aria-hidden="true">
+                        <svg class="MuiSvgIcon-root" focusable="false" width="26" height="26" fill="white" viewBox="0 0 24 24" aria-hidden="true">
                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z">
 
                         </path></svg>
-                        Server</button>
+                        SERVER</button>
                     </div>
                   </div>
-           
-                 
                   <div class="graphtext">
                      <div class="input1">
                         <div>
@@ -457,74 +460,147 @@
                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
                      </div>
                      </div>
-                    <div class="input1"> 
-                     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                     <label for="vehicle2">Lines From Great Russian Literature? Or E-mails From My Boss?</label>
-                  </div>
-                      <div class="input1">
-                         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                        <label for="vehicle3"> Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</label>
+                     <hr>
+                    <div class="input1">
+                         <div>
+                           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        </div>
+                        <div>
+                        <label for="vehicle1">Lines From Great Russian Literature? Or E-mails From My Boss?</label>
                      </div>
-                      <div class="input1">  
-                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                        <label for="vehicle2">Create 4 Invisible User Experiences you Never Knew About</label>
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss173" focusable="false" width="16" height="16" fill="purple" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z">
+                        </path></svg>
                      </div>
-                     
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss174" width="16" height="16" fill="red" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                     </div>
+                     </div>
+                     <hr>
+                     <div class="input1">
+                        <div>
+                           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        </div>
+                      
+                        <div>
+                        <label for="vehicle1"> Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</label>
+                     </div>
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss173" focusable="false" width="16" height="16" fill="purple" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z">
+
+                        </path></svg>
+                     </div>
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss174" width="16" height="16" fill="red" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                     </div>
+                     </div>
+                     <hr>
+                     <div class="input1">
+                        <div>
+                           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        </div>
+                      
+                        <div>
+                        <label for="vehicle1">Create 4 Invisible User Experiences you Never Knew About</label>
+                     </div>
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss173" focusable="false" width="16" height="16" fill="purple" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z">
+
+                        </path></svg>
+                     </div>
+                     <div>
+                        <svg class="MuiSvgIcon-root jss172 jss174" width="16" height="16" fill="red" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+                     </div>
+                     </div>
                   </div>
                 </div>
             </div>
         </div>
         <div class="col">
-         <div class="used-space">
-             <div class="inner">
-                 <div class="graphbg">
-                     <!-- <img src="./images/graph2.png"> -->
-                    
-                 </div>
-               <div class="graphtext">
-                  <h3>Email Subscriptions</h3>
-                  <p>Last campaign performance</p>   
-                
-               </div>
-                 <hr>
-                 <div class="col-footer">
-                     <div class="footer">
-                         <div class="svg-class">
-                           <svg class="MuiSvgIcon-root" focusable="false" width="16" height="16" fill="gray" viewBox="0 0 24 24" aria-hidden="true">
-                              <path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79s7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58s9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"></path>
-                          </svg>
-                         </div>
-                         <p>Campaign sent 2 days</p>
-                     </div>
-                 </div>
-             </div>
+         <div class="employeestats">
+<div class="top">
+    <h4>Employee Stats</h4>
+    <p>New employees on 15th September, 2016</p>
+</div>
+<div class="bottom">
+    <div class="bottomtext">
+<table class="table">
+    <thead class="tablehead">
+        <tr class="trow">
+            <th class="tablehead">ID</th>
+            <th class="tablehead">NAME</th>
+            <th class="tablehead">SALARY</th>
+            <th class="tablehead">COUNTRY</th>
+        </tr>
+    </thead>
+    <tbody class="tablebody">
+        <tr class="trow">
+            <th class="tablehead">1</th>
+            <th class="tablehead">Dakota Rice</th>
+            <th class="tablehead">$36,738</th>
+            <th class="tablehead">	Niger</th>
+          
+        </tr>
+    
+        <tr class="trow">
+            <th class="tablehead">2</th>
+            <th class="tablehead">Minerva Hooper</th>
+            <th class="tablehead">$23,789</th>
+            <th class="tablehead">Curaçao</th>
+        </tr>
+      
+        <tr class="trow">
+            <th class="tablehead">3</th>
+            <th class="tablehead">Sage Rodriguez</th>
+            <th class="tablehead">$56,142</th>
+            <th class="tablehead">Netherlands</th>
+        </tr>
+        <hr_line>
+        <tr class="trow">
+            <th class="tablehead">4</th>
+            <th class="tablehead">Philip Chaney</th>
+            <th class="tablehead">$38,735</th>
+            <th class="tablehead">Korea, South</th>
+        </tr>
+     
+    </tbody>
+</table>
+    </div>
+</div>
          </div>
-     </div>
+        </div>
   
      </div>
    </div>
-  <!-- <div class="task-list">
-      <div class="task">
-          <input type="checkbox" checked>
-          <span>Sign contract for "What are conference organizers afraid of?"</span>
-          <span class="edit">✏️</span>
-          <span class="delete">❌</span>
-      </div>
-      <div class="task">
-          <input type="checkbox">
-          <span>Lines From Great Russian Literature? Or E-mails From My Boss?</span>
-          <span class="edit">✏️</span>
-          <span class="delete">❌</span>
-      </div>
-      <div class="task">
-          <input type="checkbox">
-          <span>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</span>
-          <span class="edit">✏️</span>
-          <span class="delete">❌</span>
-      </div>
-  </div> -->
      </div>
+     <footer class="footerdown">
+        <div class="footersection">
+            <div class="col">
+                <div class="footerleft">
+                    <h5>HOME</h5>
+                    <h5>COMPANY</h5>
+                    <h5>PORTFOLIO</h5>
+                    <h5>BLOG</h5>
+                    <!-- <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a> -->
+                </div>
+            </div>
+            <div class="col">
+                <div class="footerright">
+                    <p>© 2024 <span>Creative Tim,</span> made with love for a better web</p>
+                </div>
+            </div>
+        </div>
+    </footer>
   </div>
+
    </div>
    </div>
 </body>
