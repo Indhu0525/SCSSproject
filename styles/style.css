@@ -12,7 +12,6 @@ body {
   height: 100vh;
   width: 260px;
   position: relative;
-  padding-top: 10px;
 }
 .sidebar::before {
   content: "";
@@ -24,24 +23,33 @@ body {
   background: url("../images/sidebarbg.png") no-repeat center center/cover;
   filter: brightness(20%);
   z-index: 1;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-.sidebar .sidebar_header {
-  display: flex;
+.sidebar .header {
   padding: 15px 15px;
+  z-index: 4;
   position: relative;
-  z-index: 2;
-  margin-left: 10px;
 }
-.sidebar .sidebar_header img {
-  width: 35px;
-}
-.sidebar .sidebar_header h4 {
-  padding-left: 8px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+.sidebar .header .creative {
+  color: #fff;
+  display: block;
+  padding: 5px 0;
   font-size: 18px;
-  font-weight: 0;
-  line-height: 0px;
-  color: white;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.sidebar .header .creative .image {
+  width: 30px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.sidebar .header .creative .img {
+  top: 22px;
+  width: 35px;
+  position: absolute;
 }
 .sidebar .hr_line {
   margin-left: 15px;
@@ -61,6 +69,7 @@ body {
   border-radius: 3px;
   z-index: 2;
   position: relative;
+  line-height: 30px;
 }
 .sidebar .sidebar_content .button1 .custom-button:hover, .sidebar .sidebar_content .button1 .sidebar_footer:hover, .sidebar .sidebar_content .sidebar_footer .custom-button:hover, .sidebar .sidebar_content .sidebar_footer .sidebar_footer:hover, .sidebar .sidebar_footer .button1 .custom-button:hover, .sidebar .sidebar_footer .button1 .sidebar_footer:hover, .sidebar .sidebar_footer .sidebar_footer .custom-button:hover, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer:hover, .sidebar .sidebar_content .button2 .custom-button:hover, .sidebar .sidebar_content .button2 .sidebar_footer:hover, .sidebar .sidebar_footer .button2 .custom-button:hover, .sidebar .sidebar_footer .button2 .sidebar_footer:hover, .sidebar .sidebar_content .button3 .custom-button:hover, .sidebar .sidebar_content .button3 .sidebar_footer:hover, .sidebar .sidebar_footer .button3 .custom-button:hover, .sidebar .sidebar_footer .button3 .sidebar_footer:hover, .sidebar .sidebar_content .button4 .custom-button:hover, .sidebar .sidebar_content .button4 .sidebar_footer:hover, .sidebar .sidebar_footer .button4 .custom-button:hover, .sidebar .sidebar_footer .button4 .sidebar_footer:hover, .sidebar .sidebar_content .button5 .custom-button:hover, .sidebar .sidebar_content .button5 .sidebar_footer:hover, .sidebar .sidebar_footer .button5 .custom-button:hover, .sidebar .sidebar_footer .button5 .sidebar_footer:hover, .sidebar .sidebar_content .button6 .custom-button:hover, .sidebar .sidebar_content .button6 .sidebar_footer:hover, .sidebar .sidebar_footer .button6 .custom-button:hover, .sidebar .sidebar_footer .button6 .sidebar_footer:hover, .sidebar .sidebar_content .button7 .custom-button:hover, .sidebar .sidebar_content .button7 .sidebar_footer:hover, .sidebar .sidebar_footer .button7 .custom-button:hover, .sidebar .sidebar_footer .button7 .sidebar_footer:hover, .sidebar .sidebar_content .button8 .custom-button:hover, .sidebar .sidebar_content .button8 .sidebar_footer:hover, .sidebar .sidebar_footer .button8 .custom-button:hover, .sidebar .sidebar_footer .button8 .sidebar_footer:hover {
   background-color: #00acc1;
@@ -72,7 +81,6 @@ body {
 .sidebar .sidebar_content .button1 .custom-button h4, .sidebar .sidebar_content .button1 .sidebar_footer h4, .sidebar .sidebar_content .sidebar_footer .custom-button h4, .sidebar .sidebar_content .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_footer .button1 .custom-button h4, .sidebar .sidebar_footer .button1 .sidebar_footer h4, .sidebar .sidebar_footer .sidebar_footer .custom-button h4, .sidebar .sidebar_footer .sidebar_footer .sidebar_footer h4, .sidebar .sidebar_content .button2 .custom-button h4, .sidebar .sidebar_content .button2 .sidebar_footer h4, .sidebar .sidebar_footer .button2 .custom-button h4, .sidebar .sidebar_footer .button2 .sidebar_footer h4, .sidebar .sidebar_content .button3 .custom-button h4, .sidebar .sidebar_content .button3 .sidebar_footer h4, .sidebar .sidebar_footer .button3 .custom-button h4, .sidebar .sidebar_footer .button3 .sidebar_footer h4, .sidebar .sidebar_content .button4 .custom-button h4, .sidebar .sidebar_content .button4 .sidebar_footer h4, .sidebar .sidebar_footer .button4 .custom-button h4, .sidebar .sidebar_footer .button4 .sidebar_footer h4, .sidebar .sidebar_content .button5 .custom-button h4, .sidebar .sidebar_content .button5 .sidebar_footer h4, .sidebar .sidebar_footer .button5 .custom-button h4, .sidebar .sidebar_footer .button5 .sidebar_footer h4, .sidebar .sidebar_content .button6 .custom-button h4, .sidebar .sidebar_content .button6 .sidebar_footer h4, .sidebar .sidebar_footer .button6 .custom-button h4, .sidebar .sidebar_footer .button6 .sidebar_footer h4, .sidebar .sidebar_content .button7 .custom-button h4, .sidebar .sidebar_content .button7 .sidebar_footer h4, .sidebar .sidebar_footer .button7 .custom-button h4, .sidebar .sidebar_footer .button7 .sidebar_footer h4, .sidebar .sidebar_content .button8 .custom-button h4, .sidebar .sidebar_content .button8 .sidebar_footer h4, .sidebar .sidebar_footer .button8 .custom-button h4, .sidebar .sidebar_footer .button8 .sidebar_footer h4 {
   font-size: 14px;
   font-weight: 100;
-  line-height: 30px;
   color: #e5e7eb;
   padding-left: 15px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -102,7 +110,6 @@ body {
   padding: 12px 30px;
   font-size: 18px;
   font-weight: 200;
-  line-height: 30px;
   color: #a6a8aa;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
@@ -119,9 +126,6 @@ body {
   width: 100%;
   outline: none;
   background: transparent;
-}
-.main_content .main-header .righthead .search-box input:focus {
-  border-bottom: 1px solid #9c27b0;
 }
 .main_content .main-header .righthead .svg--class, .main_content .main-header .righthead .svg-dashboard, .main_content .main-header .righthead .svg-notifications {
   background-color: white;
@@ -177,8 +181,8 @@ body {
   padding: 15px;
   margin-top: -20px;
   margin-left: 15px;
-  width: 84px;
-  height: 84px;
+  width: 86px;
+  height: 87px;
   float: left;
   background: linear-gradient(60deg, #ffa726, #fb8c00);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
@@ -258,7 +262,7 @@ body {
   color: #bababa;
 }
 .main_content .main-content .row2 .graphbg, .main_content .main-content .row3 .graphbg {
-  padding: 20px;
+  padding: 15px;
 }
 .main_content .main-content .row2 .graphbg .img1, .main_content .main-content .row3 .graphbg .img1, .main_content .main-content .row2 .graphbg .img3, .main_content .main-content .row3 .graphbg .img3, .main_content .main-content .row2 .graphbg .img2, .main_content .main-content .row3 .graphbg .img2 {
   margin-top: -40px;
@@ -288,9 +292,11 @@ body {
   color: gray;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 .main_content .main-content .row2 .graphtext p span, .main_content .main-content .row3 .graphtext p span {
-  color: #366d39;
+  font-size: 15px;
+  color: #4caf50;
 }
 .main_content .main-content .row3 .col {
   background: #FFF;
@@ -396,7 +402,6 @@ body {
 .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata span {
   color: gray;
   border: none;
-  padding: 8px;
   font-size: 14px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
