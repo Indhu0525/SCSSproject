@@ -40,7 +40,7 @@ body {
     h4 {//header h4//
       padding-left: 8px;
       font-family: $font-fam;
-      @include h4set($size:18px,$txtcolor:white);
+      @include h4set($size:18px,$txtcolor:white,$fw:0);
     }
   }
 //horizontal line//
@@ -99,6 +99,7 @@ body {
 //main content//
 .main_content{
  width: 100%;
+ //header
   .main-header{
     padding: 10px 0;
     padding-left: 15px;
@@ -164,7 +165,7 @@ body {
       }
     }
   }
-
+//content
   .main-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -285,18 +286,29 @@ body {
 }
         .graphbg{
         padding: 20px;
-          img{
+          .img1{
             margin-top: -40px;
             width: 100%;
             border-radius: 4px;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(76, 175, 80, .4);
           }
+          .img2{
+@extend .img1;
+box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+          }
+          .img3{
+            @extend .img1;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(244, 67, 54, .4);
+                      }
       }
       .graphtext{
         color: gray;
-        margin: 0 15px;
+        margin: 0 30px;
         margin-bottom: 20px;
-        h3{
-font-size: 20px;
+        h4{
+          font-size: 18px;
+          font-weight: inherit;
+          color: #3C4858;
         }
         p{
           padding-top: 5px;
@@ -304,8 +316,10 @@ font-size: 20px;
           color: gray;
           display: flex;
           align-items: center;
+          gap: 5px;
           span{
-            color: #366d39;
+            font-size: 15px;
+            color: #4caf50;
           }
         }
       }
@@ -315,48 +329,131 @@ font-size: 20px;
 .row3{
   @extend .row2;
 .col{
-  .task{
-    display: flex;
-    background: linear-gradient(60deg, #ab47bc, #8e24aa);
-    margin-top: -20px;
-    border-radius: 3px;
-    color: white;
-    float: left;
-    padding: 10px 10px 10px 0px;
-    width: 90%;
-    margin-left: 24px;
-    button{
-      padding: 15px;
-    }
-    .taskbuttons{
+  background: #FFF;
+  border-radius: 6px;
+  padding: 0 15px;
+  .employeetasks{
+    .emptop{
       display: flex;
-      overflow-y: auto;
-      button{
+      padding: 15px;
       border-radius: 3px;
-        display: flex;
-        align-items: center;
+      background: linear-gradient(60deg, #ab47bc, #8e24aa);
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(156, 39, 176, .4);
+      color: #fff;
+      margin-top: -20px;
+      margin-bottom: 3px;
+      .task{
+        padding: 10px 10px 10px 0px;
+        line-height: 24px;
+      }
+        .tasklist{
+             display: flex;
+                overflow-y: auto;
+                button{
+                border-radius: 3px;
+                  display: flex;
+                  align-items: center;
+                  padding: 10px 15px; 
+    margin-left: 4px;
+                }
+                .button1{
+                  background-color: rgba(255, 255, 255, 0.2);
+                }
+                .button1:hover{
+                  background-color: rgba(255, 255, 255, 0.2);
+                }
+                button:hover{
+                  background-color: rgba(255, 255, 255, 0.2);
+                }
+      }
+    }
+    .bottom{
+      padding:20px;
       
-      
+      .bottomtext{
+       
+        overflow-x: auto;
+.table{
+  width: 100%;
+  max-width: 100%;
+  .tablebody{
+    @extend .tablehead;
+   .trow{
+    text-align: start;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+   padding: 13px;
+   align-items: center;
+    .tablehead{
+      padding: 8px;
+      text-align: start;
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 0.8125rem;
+    
+    input[type="checkbox"] {
+        accent-color: black;
+        appearance: none;
+        width: 20px;
+        border: 1px solid rgba(0, 0, 0, .54);
+        height: 20px;
+        border-radius: 3px;
+        position: relative;
+        padding: 8px;
+    }
+
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    input[type="checkbox"]:checked::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 5px;
+        height: 10px;
+        border: solid purple;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+ 
+    }
+    .tabledata{
+      border: none;
+      text-align: start;
+      color: rgba(0, 0, 0, 0.87);
+      line-height: 1.42857143;
+      vertical-align: middle;
+      span{
+        color: gray;
+        border: none;
+    padding: 8px;
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.42857143;
+ 
       }
-      .button1{
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-      .button1:hover{
-        background-color: rgba(255, 255, 255, 0.2);
-      }
-      button:hover{
-        background-color: rgba(255, 255, 255, 0.2);
+   }
+   .tableend{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .editicon{
+
+    }
+   }
+  }
+}
       }
     }
   }
-  .graphtext{
-    .input1{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-    }
-  
   }
 }
 .col{
@@ -420,6 +517,7 @@ font-size: 20px;
 
 }
   }
+  //footer
   .footerdown {
     padding: 15px 0;
     .footersection {

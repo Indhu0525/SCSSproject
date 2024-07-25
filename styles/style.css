@@ -39,8 +39,8 @@ body {
   padding-left: 8px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
+  font-weight: 0;
+  line-height: 0px;
   color: white;
 }
 .sidebar .hr_line {
@@ -260,18 +260,27 @@ body {
 .main_content .main-content .row2 .graphbg, .main_content .main-content .row3 .graphbg {
   padding: 20px;
 }
-.main_content .main-content .row2 .graphbg img, .main_content .main-content .row3 .graphbg img {
+.main_content .main-content .row2 .graphbg .img1, .main_content .main-content .row3 .graphbg .img1, .main_content .main-content .row2 .graphbg .img3, .main_content .main-content .row3 .graphbg .img3, .main_content .main-content .row2 .graphbg .img2, .main_content .main-content .row3 .graphbg .img2 {
   margin-top: -40px;
   width: 100%;
   border-radius: 4px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4);
+}
+.main_content .main-content .row2 .graphbg .img2, .main_content .main-content .row3 .graphbg .img2 {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+.main_content .main-content .row2 .graphbg .img3, .main_content .main-content .row3 .graphbg .img3 {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
 }
 .main_content .main-content .row2 .graphtext, .main_content .main-content .row3 .graphtext {
   color: gray;
-  margin: 0 15px;
+  margin: 0 30px;
   margin-bottom: 20px;
 }
-.main_content .main-content .row2 .graphtext h3, .main_content .main-content .row3 .graphtext h3 {
-  font-size: 20px;
+.main_content .main-content .row2 .graphtext h4, .main_content .main-content .row3 .graphtext h4 {
+  font-size: 18px;
+  font-weight: inherit;
+  color: #3C4858;
 }
 .main_content .main-content .row2 .graphtext p, .main_content .main-content .row3 .graphtext p {
   padding-top: 5px;
@@ -283,43 +292,120 @@ body {
 .main_content .main-content .row2 .graphtext p span, .main_content .main-content .row3 .graphtext p span {
   color: #366d39;
 }
-.main_content .main-content .row3 .col .task {
+.main_content .main-content .row3 .col {
+  background: #FFF;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.main_content .main-content .row3 .col .employeetasks .emptop {
   display: flex;
-  background: linear-gradient(60deg, #ab47bc, #8e24aa);
-  margin-top: -20px;
-  border-radius: 3px;
-  color: white;
-  float: left;
-  padding: 10px 10px 10px 0px;
-  width: 90%;
-  margin-left: 24px;
-}
-.main_content .main-content .row3 .col .task button {
   padding: 15px;
+  border-radius: 3px;
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+  color: #fff;
+  margin-top: -20px;
+  margin-bottom: 3px;
 }
-.main_content .main-content .row3 .col .task .taskbuttons {
+.main_content .main-content .row3 .col .employeetasks .emptop .task {
+  padding: 10px 10px 10px 0px;
+  line-height: 24px;
+}
+.main_content .main-content .row3 .col .employeetasks .emptop .tasklist {
   display: flex;
   overflow-y: auto;
 }
-.main_content .main-content .row3 .col .task .taskbuttons button {
+.main_content .main-content .row3 .col .employeetasks .emptop .tasklist button {
   border-radius: 3px;
   display: flex;
   align-items: center;
+  padding: 10px 15px;
+  margin-left: 4px;
 }
-.main_content .main-content .row3 .col .task .taskbuttons .button1, .main_content .main-content .row3 .col .task .taskbuttons .sidebar .sidebar_footer, .sidebar .main_content .main-content .row3 .col .task .taskbuttons .sidebar_footer {
+.main_content .main-content .row3 .col .employeetasks .emptop .tasklist .button1, .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer, .sidebar .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar_footer {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .task .taskbuttons .button1:hover, .main_content .main-content .row3 .col .task .taskbuttons .sidebar .sidebar_footer:hover, .sidebar .main_content .main-content .row3 .col .task .taskbuttons .sidebar_footer:hover {
+.main_content .main-content .row3 .col .employeetasks .emptop .tasklist .button1:hover, .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer:hover, .sidebar .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar_footer:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .task .taskbuttons button:hover {
+.main_content .main-content .row3 .col .employeetasks .emptop .tasklist button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .graphtext .input1 {
+.main_content .main-content .row3 .col .employeetasks .bottom {
+  padding: 20px;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext {
+  overflow-x: auto;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table {
+  width: 100%;
+  max-width: 100%;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow {
+  text-align: start;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: 13px;
+  align-items: center;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody {
+  padding: 8px;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox], .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox] {
+  accent-color: black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  height: 20px;
+  border-radius: 3px;
+  position: relative;
+  padding: 8px;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]::before, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]:checked::after, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid purple;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata {
+  border: none;
+  text-align: start;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.42857143;
+  vertical-align: middle;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata span {
+  color: gray;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.42857143;
+}
+.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tableend {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  gap: 10px;
 }
 .main_content .main-content .row3 .col {
   background: #FFF;
