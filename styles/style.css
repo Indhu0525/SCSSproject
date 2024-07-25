@@ -12,6 +12,7 @@ body {
   height: 100vh;
   width: 260px;
   position: relative;
+  overflow-x: hidden;
 }
 .sidebar::before {
   content: "";
@@ -97,6 +98,7 @@ body {
 
 .main_content {
   width: 100%;
+  overflow: auto;
 }
 .main_content .main-header {
   padding: 10px 0;
@@ -550,5 +552,8 @@ body {
   }
   .main_content .row2 .row .col, .main_content .main-content .row3 .row .col {
     width: 50%;
+  }
+  .main_content .main-header .sidebartoggle {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
