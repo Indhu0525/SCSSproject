@@ -1,7 +1,21 @@
+:root {
+  --main-bg:#fff;
+  --icon-color: black;
+  --cards-bg:#fff;
+  --tabletext:black;
+}
+
+[data-bs-theme=dark] {
+  --main-bg:black;
+  --icon-color: #fff;
+  --cards-bg:#ffffff1a;
+  --tabletext:#808080;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: var(--main-bg) !important;
 }
 
 .screen {
@@ -118,6 +132,7 @@ body {
 .main_content .main-header .righthead {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .main_content .main-header .righthead .search-box {
   width: 200px;
@@ -132,8 +147,8 @@ body {
 .main_content .main-header .righthead .svg--class, .main_content .main-header .righthead .svg-dashboard, .main_content .main-header .righthead .svg-notifications {
   background-color: white;
   border-radius: 30px;
-  width: 41px;
-  height: 41px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,6 +157,7 @@ body {
   color: white;
   width: 18px;
   height: 18px;
+  fill: var(--icon-color); /* Apply dynamic color */
 }
 .main_content .main-header .righthead .svg-dashboard, .main_content .main-header .righthead .svg-notifications {
   background-color: unset;
@@ -175,7 +191,7 @@ body {
   margin-bottom: 30px;
 }
 .main_content .main-content .row1 .row .col .used-space, .main_content .main-content .row2 .row .col .used-space, .main_content .main-content .row3 .row .col .used-space {
-  background-color: #ffffff;
+  background-color: var(--cards-bg);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -300,12 +316,12 @@ body {
   font-size: 15px;
   color: #4caf50;
 }
-.main_content .main-content .row3 .col {
-  background: #FFF;
+.main_content .main-content .row3 .row .col {
+  background-color: var(--cards-bg);
   border-radius: 6px;
   padding: 0 15px;
 }
-.main_content .main-content .row3 .col .employeetasks .emptop {
+.main_content .main-content .row3 .row .col .employeetasks .emptop {
   display: flex;
   padding: 15px;
   border-radius: 3px;
@@ -315,54 +331,55 @@ body {
   margin-top: -20px;
   margin-bottom: 3px;
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .task {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .task {
   padding: 10px 10px 10px 0px;
   line-height: 24px;
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .tasklist {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist {
   display: flex;
   overflow-y: auto;
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .tasklist button {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist button {
   border-radius: 3px;
   display: flex;
   align-items: center;
   padding: 10px 15px;
   margin-left: 4px;
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .tasklist .button1, .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer, .sidebar .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar_footer {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .button1, .main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer, .sidebar .main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .sidebar_footer {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .tasklist .button1:hover, .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer:hover, .sidebar .main_content .main-content .row3 .col .employeetasks .emptop .tasklist .sidebar_footer:hover {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .button1:hover, .main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .sidebar .sidebar_footer:hover, .sidebar .main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist .sidebar_footer:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .employeetasks .emptop .tasklist button:hover {
+.main_content .main-content .row3 .row .col .employeetasks .emptop .tasklist button:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.main_content .main-content .row3 .col .employeetasks .bottom {
+.main_content .main-content .row3 .row .col .employeetasks .bottom {
   padding: 20px;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext {
   overflow-x: auto;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table {
   width: 100%;
   max-width: 100%;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow {
   text-align: start;
   border-bottom: 1px solid #ddd;
   display: flex;
   padding: 13px;
   align-items: center;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody {
   padding: 8px;
   text-align: start;
   color: rgba(0, 0, 0, 0.87);
   font-size: 0.8125rem;
+  background-color: transparent;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox], .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox] {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox], .main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox] {
   accent-color: black;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -374,7 +391,7 @@ body {
   position: relative;
   padding: 8px;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]::before, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]::before {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]::before, .main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]::before {
   content: "";
   position: absolute;
   top: 0;
@@ -383,7 +400,7 @@ body {
   height: 100%;
   background-color: transparent;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]:checked::after, .main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]:checked::after {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablehead input[type=checkbox]:checked::after, .main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tablebody input[type=checkbox]:checked::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -394,14 +411,15 @@ body {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata {
   border: none;
   text-align: start;
   color: rgba(0, 0, 0, 0.87);
   line-height: 1.42857143;
   vertical-align: middle;
+  background-color: transparent;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata span {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tabledata span {
   color: gray;
   border: none;
   font-size: 14px;
@@ -409,17 +427,18 @@ body {
   font-weight: 300;
   line-height: 1.42857143;
 }
-.main_content .main-content .row3 .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tableend {
+.main_content .main-content .row3 .row .col .employeetasks .bottom .bottomtext .table .tablebody .trow .tableend {
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: transparent;
 }
-.main_content .main-content .row3 .col {
-  background: #FFF;
+.main_content .main-content .row3 .row .col {
+  background-color: var(--cards-bg);
   border-radius: 6px;
   padding: 0 15px;
 }
-.main_content .main-content .row3 .col .employeestats .top {
+.main_content .main-content .row3 .row .col .employeestats .top {
   padding: 15px;
   margin-top: -20px;
   border-radius: 3px;
@@ -428,41 +447,42 @@ body {
   color: #fff;
   margin-bottom: 3px;
 }
-.main_content .main-content .row3 .col .employeestats .top p {
+.main_content .main-content .row3 .row .col .employeestats .top p {
   color: rgba(255, 255, 255, 0.62);
   font-size: 14px;
 }
-.main_content .main-content .row3 .col .employeestats .bottom {
+.main_content .main-content .row3 .row .col .employeestats .bottom {
   padding: 20px;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext {
   margin-top: 24px;
   overflow-x: auto;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table {
   width: 100%;
   max-width: 100%;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablehead, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody {
   color: #ff9800;
   text-align: start;
+  background-color: transparent;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablehead .trow, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow {
   border-bottom: 1px solid #ddd;
   height: 56px;
   display: table-row;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablebody, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablehead, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablehead .trow .tablebody, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
   padding: 12px 8px;
   font-size: 1em;
   font-weight: 300;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow {
   border-bottom: 1px solid #ddd;
 }
-.main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
+.main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablehead, .main_content .main-content .row3 .row .col .employeestats .bottom .bottomtext .table .tablebody .trow .tablebody {
   text-align: start;
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--tabletext);
   font-size: 0.8125rem;
 }
 .main_content .footerdown {
